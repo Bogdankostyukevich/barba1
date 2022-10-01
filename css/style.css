@@ -1,0 +1,597 @@
+:root {
+    --white-title-color: #ffffff;
+    --text-color: #9DA4BD;
+    --hover-color: #FF6C00;
+    --black-text-color: #303030;
+    --description-color: #555555;
+    --background-color: #F7F7F7;
+}
+
+/* * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+} */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* глобальне оформлення тексту */
+
+h1,
+h2 {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+
+    letter-spacing: 0.05em;
+}
+
+.social-link,
+.hero-text-en,
+.hero-btn,
+.hero-btn-rt,
+.about-text,
+.price-text,
+.statistic-text,
+.master-text,
+.works-text,
+.footer-link,
+.footer-text,
+.work-time {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+}
+
+.address-text,
+.address-tel,
+.address-mail {
+    font-style: normal;
+}
+
+.nav-item,
+.online-registration,
+.online-registration-wt,
+.nav-contact {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+}
+
+.hero-text-ru,
+.about-motivation,
+.price-list,
+.statistic-advantage,
+.address-text,
+.address-tel,
+.address-mail {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66;
+
+    letter-spacing: 0.02em;
+
+}
+
+.online-registration,
+.online-registration-wt {
+    text-transform: uppercase;
+}
+
+.social-link,
+.footer-text,
+.footer-link {
+    letter-spacing: 0.2em;
+}
+
+.about-text,
+.hero-text-en,
+.price-text,
+.statistic-text,
+.master-text,
+.works-text {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.hero-btn,
+.hero-btn-rt {
+    letter-spacing: 0.1em;
+}
+.container {
+    width: 1280px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* шапка сторінки */
+
+.header {
+    background-color: var(--black-text-color);
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-contact,
+.online-registration,
+.online-registration-wt {
+    text-decoration: none;
+}
+
+.nav-link,
+.nav-contact,
+.online-registration {
+    color: var(--white-title-color);
+}
+
+.online-registration-wt {
+    color: var(--white-title-color);
+}
+
+.nav-list-contacts {
+    margin-left: auto;
+}
+
+.online-registration,
+.online-registration-wt {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    border: 1px solid var(--hover-color);
+    border-radius: 25px;
+}
+
+.online-registration:hover,
+.online-registration:focus {
+    background-color: var(--hover-color);
+    color: var(--white-title-color);
+}
+
+.online-registration-wt:hover,
+.online-registration-wt:focus {
+    background-color: var(--hover-color);
+}
+
+.social-link {
+    color: var(--black-text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.social-link:hover,
+.social-link:focus,
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--hover-color);
+}
+
+/* головна секція */
+
+.hero-text-en,
+.hero-text-ru {
+    color: var(--text-color);
+}
+
+.hero {
+    background-color: var(--black-text-color);
+}
+
+.hero .container {
+    padding-top: 272px;
+    padding-left: 215px;
+}
+
+.hero-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hero ul:last-child {
+    padding-bottom: 40px;
+    text-align: right;
+}
+
+.social-link {
+    color: aqua;
+    text-decoration: none;
+}
+
+.hero-text-en,
+.hero-title,
+.hero-text-ru {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-text-en {
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    color: var(--white-title-color);
+    margin-bottom: 20px;
+}
+
+.hero-text-ru {
+    margin-bottom: 124px;
+}
+
+.hero-btn,
+.hero-btn-rt {
+    margin: 0;
+    padding: 8px 0;
+    border: 0;
+    border-bottom: 2px solid var(--text-color);
+    width: 60px;
+    color: var(--text-color);
+    background-color: transparent;
+    text-align: left;
+}
+
+.hero-btn-rt {
+    text-align: right;
+}
+
+.hero-btn:hover,
+.hero-btn:focus,
+.hero-btn-rt:hover,
+.hero-btn-rt:focus {
+    color: var(--white-title-color);
+    border-bottom: 2px solid var(--white-title-color);
+}
+
+/* про нас */
+
+.about .container {
+    padding-top: 139px;
+    padding-bottom: 121px;
+}
+
+.about-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.about-item {
+    margin-right: 35px;
+}
+
+.about-text,
+.about-title {
+    color: var(--black-text-color);
+}
+
+.about-text,
+.about-title,
+.about-motivation,
+.about-us {
+    margin: 0;
+    padding: 0;
+}
+
+.about-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about-motivation {
+    margin-bottom: 21px;
+}
+
+.about-us {
+    margin-bottom: 38px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+
+    letter-spacing: 0.02em;
+
+    color: var(--description-color);
+}
+
+.about .online-registration {
+    color: var(--black-text-color)
+}
+
+/* послуги та ціни */
+
+.price {
+    background-color: var(--black-text-color);
+}
+
+.price-box {
+    padding: 130px 55px;
+}
+
+.price a {
+    margin-top: 50px;
+}
+
+.price-text {
+    color: var(--text-color);
+
+    margin: 0;
+    padding: 0;
+}
+
+.price-item {
+    margin-top: 20px;
+    margin-bottom: 44px;
+
+    color: var(--white-title-color)
+}
+
+.price-list {
+    padding: 0;
+
+    color: var(--text-color);
+}
+
+
+/* статистика */
+
+.statistic-box {
+    padding-top: 121px;
+    padding-bottom: 130px;
+}    
+
+.statistic-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.statistic-number,
+.statistic-text {
+    margin: 0;
+    padding: 0;
+}
+
+.statistic-number {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.35;
+    letter-spacing: 0.05em;
+
+    color: var(--black-text-color);
+}
+
+.statistic-item,
+.statistic-advantage {
+    margin: 0;
+    padding: 0;
+}
+
+.statistic-box h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.statistic-number {
+    margin-bottom: 20px;
+}
+
+.sup {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.37;
+
+    color: #FF6C00;
+}
+
+.statistic-text {
+    color: var(--black-text-color);
+}
+
+.statistic-text,
+.statistic-item {
+    color: var(--black-text-color);
+}
+
+.statistic-advantage {
+    color: var(--description-color);
+}
+
+/* наші майстри */
+
+.master {
+    background-color: var(--background-color);
+}
+
+.masters-box {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.master-text,
+.master-item {
+    color: var(--black-text-color);
+}
+
+.master-text,
+.master-item {
+    margin: 0;
+    padding: 0;
+}
+
+.master-title {
+    margin-top: 18px;
+    margin-bottom: 40px;
+}
+
+.master-list,
+.social-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-list {
+    width: 180px;
+    margin: 0 auto;
+}
+
+.master-item {
+    width: 370px;
+    text-align: center;
+}
+
+.master-name,
+.master-position {
+    margin: 0;
+    padding: 0;
+}
+
+.master-name {
+    margin-top: 28px;
+    margin-bottom: 7px;
+
+    color: var(--black-text-color);
+}
+
+.master-position {
+    margin-bottom: 27px;
+
+    color: var(--hover-color);
+}
+
+
+/* ------------------ */
+
+.works-box {
+    padding-top: 200px;
+    padding-bottom: 60px;
+}
+
+.works-text {
+    margin-bottom: 44px;
+    padding: 0;
+
+    color: var(--black-text-color);
+}
+
+.works-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.address-text,
+.address-tel,
+.address-mail,
+.footer-text {
+    color: var(--text-color);
+}
+
+.footer-link {
+    color: var(--black-text-color);
+}
+
+/* онлайн-запис */
+
+.info-box {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.info {
+    background-color: var(--black-text-color);
+}
+
+.registrations {
+    margin: 0;
+    padding: 0;
+}
+
+.registrations,
+.info-contacts {
+    color: var(--white-title-color);
+}
+
+input,
+textarea {
+    padding: 0;
+}
+
+.btn-send {
+    margin: 0;
+    padding: 12px 20px;
+    background-color: transparent;
+    color: var(--white-title-color);
+    border: 1px solid var(--hover-color);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn-send:hover,
+.btn-send:focus {
+    background-color: var(--hover-color);
+    color: var(--white-title-color);
+}
+
+.info-contacts {
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.address-list,
+.footer-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.address-text,
+.work-time {
+    margin: 0;
+    padding: 0;
+}
+
+.address-tel {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.work-time {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    color: var(--white-title-color);
+}
+
+/* підвал */
+
+.footer-box {
+    padding-top: 125px;
+    padding-bottom: 55px;
+}
+
+.footer-link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--hover-color);
+}
+
